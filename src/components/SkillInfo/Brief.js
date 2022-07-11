@@ -1,14 +1,15 @@
 import React from "react";
-import Skills from "./Skills";
+import styles from "./Brief.module.css";
+import Experiences from "./Experiences";
 import Summary from "./Summary";
 
 const Brief = (props) => {
-    return (
-        <React.Fragment>
-            <Summary />
-            <Skills />
-        </React.Fragment>
-    )
+	return (
+		<div className={styles.brief}>
+			<Summary />
+			<Experiences />
+		</div>
+	)
 }
 
 export default Brief;
