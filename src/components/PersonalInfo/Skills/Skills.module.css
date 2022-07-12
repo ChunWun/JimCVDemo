@@ -1,7 +1,36 @@
+.background {
+	padding: 1rem;
+	margin-bottom: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	background-color: white;
+}
+
 .skills {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2rem auto 0 auto;
+	max-width: 60rem;
+	width: 90%;
+}
+
+.button {
+	border: none;
+	background-color: unset;
+}
+
+.context {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 2rem auto;
 	max-width: 60rem;
 	width: 90%;
+}
+
+.context p {
+	display: flex;
+	justify-content: space-evenly;
+	font-style: italic;
+	color: #838383;
+	font-size: 0.75rem;
 }

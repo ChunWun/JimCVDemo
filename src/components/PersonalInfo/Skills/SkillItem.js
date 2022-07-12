@@ -1,16 +1,13 @@
 import styles from "./SkillItem.module.css";
 
 const SkillItem = (props) => {
+
+	const imgStyle = (props.isToggle) ? styles.mainImageToggle : styles.mainImage;
+
 	return (
 		<div className={styles.skillItem}>
-
-
-			<div className={styles.mainImage}>
-				<img src={props.imgUrl} alt='A table full of delicious food!' />
-			</div>
-			<div>
-				{props.name}
-				{props.description}
+			<div className={imgStyle}>
+				<img src={props.imgUrl} alt='skill toggle' />
 			</div>
 		</div>
 	);
