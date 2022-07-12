@@ -1,4 +1,4 @@
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 import styles from "./Experiences.module.css";
 import ExperienceItem from "./ExperienceItem";
 
@@ -35,9 +35,8 @@ const Experiences = (props) => {
 
 	const experiencesList = EXPERIENCES_LIST.map((exp) => {
 		return (
-			<Card>
+			<Card key={exp.id}>
 				<ExperienceItem
-					key={exp.id}
 					id={exp.id}
 					name={exp.name}
 					title={exp.title}

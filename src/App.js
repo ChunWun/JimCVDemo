@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header.js";
 import React from "react";
-import Brief from "./components/SkillInfo/Brief.js";
-import PageInfo from "./components/FooterInfo/PageInfo";
+import PersonalInfo from "./components/PersonalInfo/PersonalInfo.js";
+import PageInfo from "./components/FooterInfo/PageInfo.js";
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
 		<React.Fragment>
 			<Header />
 			<main>
-				<Brief />
+				<PersonalInfo />
 			</main>
 			<footer>
 				<PageInfo />

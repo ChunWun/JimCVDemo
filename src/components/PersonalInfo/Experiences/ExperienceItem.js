@@ -6,13 +6,13 @@ const ExperienceItem = (props) => {
 
 	const description = props.description.map((description) => {
 		return (
-			<li>{description}</li>
+			<li key={Math.random()}>{description}</li>
 		)
 	})
 
 	return (
 		<React.Fragment>
-			<li className={styles.experience}>
+			<div className={styles.experience}>
 				<div>
 					<h3 >{props.name}</h3>
 					<div className={styles.title}>
@@ -22,7 +22,7 @@ const ExperienceItem = (props) => {
 						{description}
 					</div>
 				</div>
-			</li>
+			</div>
 		</React.Fragment>
 	);
 }
