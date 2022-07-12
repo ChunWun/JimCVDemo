@@ -1,0 +1,7 @@
+.version {
+	color: aliceblue;
+	display: flex;
+	margin-right: 10px;
+	justify-content: flex-end;
+	font-size: 0.75rem;
+}
