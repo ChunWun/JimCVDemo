@@ -46,9 +46,19 @@ const Skills = () => {
 		},
 	]
 
-	const skillDescription = SKILLS_LIST.find(skill => {
-		return (skill.id === skillID)
-	})
+	const showContext = () => {
+		const skillDescription = SKILLS_LIST.find(skill => {
+			return (skill.id === skillID)
+		})
+
+		return (
+			<div className={styles.context}>
+				<p>
+					{skillDescription.description}
+				</p>
+			</div>
+		)
+	}
 
 	const onToggleHandler = (event) => {
 		event.preventDefault();
@@ -75,14 +85,8 @@ const Skills = () => {
 			<div className={styles.skills}>
 				{skillsList}
 			</div>
-			<div className={styles.context}>
-				<p>
-					{skillDescription.description}
-				</p>
-			</div>
+			{showContext()}
 		</div>
-
-
 	);
 }
 

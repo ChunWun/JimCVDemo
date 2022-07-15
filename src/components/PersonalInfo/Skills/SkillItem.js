@@ -2,7 +2,7 @@ import styles from "./SkillItem.module.css";
 
 const SkillItem = (props) => {
 
-	const imgStyle = (props.isToggle) ? styles.mainImageToggle : styles.mainImage;
+	const imgStyle = (props.isToggle) ? styles.mainImageToggleOn : styles.mainImageToggleOff;
 
 	return (
 		<div className={styles.skillItem}>
