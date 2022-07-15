@@ -11,7 +11,7 @@ const Brief = () => {
 				development. Also have experience in JavaScript, React.js and HTML/CSS.
 			</p>
 			<p>
-				Also passionate	about building a good workflow to shorten game production time.
+				I'm Also passionate about building a good workflow to shorten game production time.
 			</p>
 		</section>
 	);

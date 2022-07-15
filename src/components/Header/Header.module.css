@@ -42,3 +42,9 @@
 .icon {
 	margin: 0 3px;
 }
+
+@media (max-width:480px) {
+	.box {
+		display: none;
+	}
+}
