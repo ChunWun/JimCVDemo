@@ -1,6 +1,6 @@
 {
 	"name": "jim-cv-demo",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"homepage": "https://chunwun.github.io/JimCVDemo/",
 	"private": true,
 	"dependencies": {
