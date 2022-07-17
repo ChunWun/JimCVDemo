@@ -99,6 +99,7 @@
 		justify-content: center;
 		margin: 2rem auto 0 auto;
 		max-width: 60rem;
+		-webkit-tap-highlight-color: transparent;
 		user-select: none;
 		width: 90%;
 	}

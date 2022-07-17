@@ -116,6 +116,7 @@
 		height: 35px;
 		font-size: 48px;
 		user-select: none;
+		-webkit-tap-highlight-color: transparent;
 		transform: rotate(0);
 	}
 
@@ -131,6 +132,7 @@
 		height: 35px;
 		font-size: 48px;
 		user-select: none;
+		-webkit-tap-highlight-color: transparent;
 		transform: rotate(45deg);
 	}
 
