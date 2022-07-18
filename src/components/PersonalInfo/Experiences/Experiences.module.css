@@ -2,7 +2,7 @@
 	max-width: 60rem;
 	width: 90%;
 	margin: 2rem auto;
-	animation: experiences-appear 1s ease-out forwards;
+	animation: experiences-appear 1.5s ease-out forwards;
 }
 
 .experiences ul {
