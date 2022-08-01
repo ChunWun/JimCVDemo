@@ -16,31 +16,31 @@ const SKILLS_LIST = [
 	{
 		id: 's1',
 		name: 'TypeScripts',
-		description: 'More than 2 years working experience on TypeScripts, and created several web games released online',
+		description: <p>More than 2 years working experience on TypeScripts, and created several web games released online</p>,
 		imgUrl: imgTS
 	},
 	{
 		id: 's2',
 		name: 'Javascripts',
-		description: 'Base on TypeScripts learning, and try build some side project games myself',
+		description: <p>Base on TypeScripts learning, and try build some side project games myself</p>,
 		imgUrl: imgJS
 	},
 	{
 		id: 's3',
 		name: 'Pixi.js',
-		description: 'A web render tool that I used on my work, and have release somes products online',
+		description: <p>A web render tool that I used on my work, and have release somes products online</p>,
 		imgUrl: imgPixi
 	},
 	{
 		id: 's4',
 		name: 'React.js',
-		description: 'Self-study through official websites and other resources, trying to make a personal website',
+		description: <p>Self-study through official websites and other resources, trying to make a personal website</p>,
 		imgUrl: imgReact
 	},
 	{
 		id: 's5',
 		name: 'HTML/CSS',
-		description: 'In the process of making personal website gradually',
+		description: <p>In the process of making personal website gradually</p>,
 		imgUrl: imgHtml
 	},
 ]

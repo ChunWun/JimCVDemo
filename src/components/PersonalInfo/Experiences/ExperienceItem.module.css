@@ -25,3 +25,8 @@
 	color: #838383;
 	font-size: 0.75rem;
 }
+
+.description b {
+	font-weight: bold;
+	color: #289de0;
+}

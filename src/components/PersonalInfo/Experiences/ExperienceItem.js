@@ -6,7 +6,7 @@ const ExperienceItem = (props) => {
 
 	const description = props.description.map((description) => {
 		return (
-			<li key={Math.random()}>{description}</li>
+			<span key={Math.random()}>{description}</span>
 		)
 	})
 
