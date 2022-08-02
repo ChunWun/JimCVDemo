@@ -5,7 +5,7 @@ import styles from "./Brief.module.css";
 const Brief = () => {
 	return (
 		<section className={styles.brief}>
-			<h2>This is Jim Huang's brief!</h2>
+			<h2>Jim Huang's brief!</h2>
 			<p>
 				A diligent Game Engineer with 3 years experience. Familiar with TypeScripts in front-end
 				development. Also have experience in JavaScript, React.js and HTML/CSS.

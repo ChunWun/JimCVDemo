@@ -6,8 +6,9 @@ import imgJS from "../../../asset/JS_logo.png";
 import imgPixi from "../../../asset/Pixi_logo.png";
 import imgReact from "../../../asset/React_logo.png";
 import imgHtml from "../../../asset/HTML_logo.png";
-import React, { useState } from "react";
-
+import React, { useContext, useState } from "react";
+import LanguageContext from "../../Context/LanguageContext.js";
+import { LanguageMap, LANGUAGE_LIST } from "../../Language/Language.js"
 
 const STEPPER_NEXT = 'NEXT';
 const STEPPER_PREV = 'PREV';
@@ -16,37 +17,43 @@ const SKILLS_LIST = [
 	{
 		id: 's1',
 		name: 'TypeScripts',
-		description: <p>More than 2 years working experience on TypeScripts, and created several web games released online</p>,
+		description_en: <p>More than 2 years working experience on TypeScript, and created several web games released online</p>,
+		description_cn: <p>兩年以上使用TypeScript實作遊戲產品並成功上線</p>,
 		imgUrl: imgTS
 	},
 	{
 		id: 's2',
 		name: 'Javascripts',
-		description: <p>Base on TypeScripts learning, and try build some side project games myself</p>,
+		description_en: <p>Base on TypeScript learning, and try build some side project games myself</p>,
+		description_cn: <p>基於對TypeScript的認識，自行使用javaScript製作了一些side project</p>,
 		imgUrl: imgJS
 	},
 	{
 		id: 's3',
 		name: 'Pixi.js',
-		description: <p>A web render tool that I used on my work, and have release somes products online</p>,
+		description_en: <p>A web render tool that I used on my work, and have release somes products online</p>,
+		description_cn: <p>工作上使用的2D繪圖套件，基於JavaScript可實作圖像、動畫、互動元件等</p>,
 		imgUrl: imgPixi
 	},
 	{
 		id: 's4',
 		name: 'React.js',
-		description: <p>Self-study through official websites and other resources, trying to make a personal website</p>,
+		description_en: <p>Self-study through official websites and other resources, trying to make a personal website</p>,
+		description_cn: <p>上班之餘自學react等技術，並嘗試自行製作個人網站</p>,
 		imgUrl: imgReact
 	},
 	{
 		id: 's5',
 		name: 'HTML/CSS',
-		description: <p>In the process of making personal website gradually</p>,
+		description_en: <p>In the process of making personal website gradually</p>,
+		description_cn: <p>在製作個人網站的過程中持續摸索</p>,
 		imgUrl: imgHtml
 	},
 ]
 
 const Skills = () => {
 	const [skillID, setSkillID] = useState('s1');
+	const languageCtx = useContext(LanguageContext);
 
 	const onToggleHandler = (event) => {
 		event.preventDefault();
@@ -119,7 +126,7 @@ const Skills = () => {
 		return (
 			<div className={styles.context}>
 				<p>
-					{skillDescription.description}
+					{(languageCtx.language) === LanguageMap.get(LANGUAGE_LIST.ENGLISH) ? skillDescription.description_en : skillDescription.description_cn}
 				</p>
 			</div>
 		)
