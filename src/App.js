@@ -1,30 +1,18 @@
-import Header from "./components/Header/Header.js";
-import React, { useState } from "react";
-import PersonalInfo from "./components/PersonalInfo/PersonalInfo.js";
-import PageInfo from "./components/FooterInfo/PageInfo.js";
-import LanguageContext from './components/Context/LanguageContext';
-import { LanguageMap, LANGUAGE_LIST } from './components/Language/Language.js';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-function App() {
-	const [language, setLanguage] = useState(LanguageMap.get(LANGUAGE_LIST.ENGLISH));
+import Home from './components/Home';
 
-	const onChangeLanguage = (value) => {
-		setLanguage(value);
-	}
+const base = '/:locale(zh-tw|zh-cn)?';
 
-	return (
-		<LanguageContext.Provider value={{
-			language: language
-		}}>
-			<Header onChangeLanguage={onChangeLanguage} />
-			<main>
-				<PersonalInfo />
-			</main>
-			<footer>
-				<PageInfo />
-			</footer>
-		</LanguageContext.Provider >
-	);
-}
+//	localhost:3000/zh-tw/home 
+
+const App = () => (
+	<Router>
+		<div >
+			<Route path={`${base}/home`} component={Home} />
+		</div>
+	</Router>
+);
 
 export default App;
