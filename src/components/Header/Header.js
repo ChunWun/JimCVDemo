@@ -57,7 +57,8 @@ const Header = (props) => {
 								<InstagramIcon fontSize="large" color='warning' />
 							</div>
 						</a>
-						<a href='' target='_blank' rel="noreferrer">
+
+						<a href='https://github.com/ChunWun' target='_blank' rel="noreferrer">
 							<div className={styles.icon}>
 								<GitHubIcon fontSize="large" color='warning' />
 							</div>
